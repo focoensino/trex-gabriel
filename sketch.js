@@ -91,7 +91,7 @@ text("tempo: "+ tempojogo,500,30)
 
 
   if(estadoJogo == jogar){
-     tempojogo = 0;
+ 
     // cria o cronometro na variavel tempojogo
 tempojogo = tempojogo + Math.round(frameCount / 60)
     
@@ -180,7 +180,7 @@ function restart (){
 estadoJogo = jogar
 fimDeJogo.visible = false;  
 reiniciar.visible = false;
-  
+       tempojogo = 0;
 grupoDeCactos.destroyEach()
 grupoDeNuvens.destroyEach()
 trex.changeAnimation("Correndo",trexCorrendo)  
