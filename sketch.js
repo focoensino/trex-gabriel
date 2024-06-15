@@ -91,7 +91,7 @@ text("tempo: "+ tempojogo,500,30)
 
 
   if(estadoJogo == jogar){
-    
+     tempojogo = 0;
     // cria o cronometro na variavel tempojogo
 tempojogo = tempojogo + Math.round(frameCount / 60)
     
